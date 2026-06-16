@@ -505,13 +505,48 @@
         .option-btn.correct { background: #065f46 !important; border-color: #2dd4bf !important; }
         .option-btn.wrong { background: #7f1a1a !important; border-color: #f87171 !important; }
 
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+        }
         @media (max-width: 760px) {
-            .grand-gate { width: 240px; height: 340px; }
-            .title-container h1 { font-size: 2.4rem; }
-            .modal-header { font-size: 1.4rem; }
-            .gate-wrapper { gap: 15px; }
-            .gate-ornament-left, .gate-ornament-right { padding: 10px 8px; gap: 10px; font-size: 1.3rem; }
-            .ornament-label { font-size: 0.6rem; }
+            .screen { padding: 15px 10px; justify-content: flex-start; }
+            .screen > * { margin-top: auto; margin-bottom: auto; }
+            .screen > *:first-child { margin-top: auto; }
+            .screen > *:last-child { margin-bottom: auto; }
+            .bg-ornament { display: none; } /* Hide heavy floating animations on small screens */
+            .grand-gate { width: 220px; height: 320px; order: 1; }
+            .title-container h1 { font-size: 2.2rem; }
+            .title-container p { font-size: 0.9rem; }
+            .modal-content { max-height: 90vh; width: 95%; margin: auto; }
+            .modal-header { font-size: 1.3rem; padding: 16px 20px 8px 20px; }
+            .modal-body { padding: 16px 20px 20px 20px; font-size: 0.95rem; }
+            .close-modal-btn { margin: 15px auto; width: calc(100% - 40px); text-align: center; display: block; }
+            .gate-wrapper { gap: 15px; flex-direction: column; justify-content: center; margin-top: auto; margin-bottom: auto; }
+            .gate-ornament-left { order: 2; }
+            .gate-ornament-right { order: 3; }
+            .gate-ornament-left, .gate-ornament-right { 
+                flex-direction: row; 
+                padding: 10px 20px; 
+                gap: 15px; 
+                font-size: 1.4rem; 
+                border-radius: 40px;
+                width: 100%;
+                justify-content: center;
+                max-width: 280px;
+            }
+            .ornament-label { font-size: 0.65rem; }
+            .chapter-title { font-size: 1.5rem; padding: 8px 15px; }
+            .sub-card { padding: 20px 15px; }
+            .sub-card h3 { font-size: 1.3rem; }
+            .quiz-card { padding: 25px 20px; margin: 10px; width: auto; }
+            .submenu-grid { grid-template-columns: 1fr; gap: 15px; margin: 20px 0; }
+            .action-btn { padding: 12px 24px; font-size: 0.95rem; }
         }
     </style>
 </head>
