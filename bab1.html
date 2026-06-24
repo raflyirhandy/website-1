@@ -58,22 +58,21 @@
 <span class="subbab-title blue"><strong>📌 Kurva Permintaan</strong></span>
 <span class="normal-text" style="display: block; margin-bottom: 12px;">Kurva permintaan (demand curve) adalah kurva yang menggambarkan hubungan antara kuantitas barang yang diminta dengan harga barang barang itu sendiri, dengan asumsi faktor-faktor lain dianggap tetap (ceteris paribus). Menurut hukum permintaan, kenaikan harga suatu barang akan menurunkan kuantitas barang yang diminta dan sebaliknya. Oleh karena itu, kurva permintaan memiliki kemiringan dari kiri atas ke kanan bawah (slope negatif).</span>
 <!-- KODE VIDEO (Ganti baris 59-63 dengan ini) -->
-<video id="videoKurva" width="640" height="360" controls>
+
+<video id="videoPermintaan" width="640" height="360" controls>
   <source src="video%20bab%20permintaan/kurva%20permintaan.mp4" type="video/mp4">
   Maaf, browser Anda tidak mendukung pemutaran video ini.
 </video>
 
-<!-- LOGIKA JAVASCRIPT (TINGGAL KLIK UNTUK PLAY/PAUSE) -->
+<!-- LOGIKA JAVASCRIPT (Baris 66 - 78) -->
 <script>
-  const videoPermintaan = document.getElementById('videoKurva');
+  const vidPermintaan = document.getElementById('videoPermintaan');
   
-  // Logika: Ketika area video diklik, jika sedang pause maka video akan jalan (play).
-  // Jika sedang jalan, maka video akan berhenti (pause).
-  videoPermintaan.addEventListener('click', function() {
-    if (videoPermintaan.paused) {
-      videoPermintaan.play();
+  vidPermintaan.addEventListener('click', function() {
+    if (vidPermintaan.paused) {
+      vidPermintaan.play();
     } else {
-      videoPermintaan.pause();
+      vidPermintaan.pause();
     }
   });
 </script>
@@ -124,23 +123,20 @@
 <span class="subbab-title blue"><strong>📌 Kurva Penawaran</strong></span>
 <span class="normal-text" style="display: block; margin-bottom: 12px;">Kurva penawaran adalah kebalikan dari kurva permintaan. Jika harga naik, jumlah barang yang ditawarkan juga naik. Kurva ini memiliki slope/kemiringan positif, yang bergerak naik dari kiri bawah ke kanan atas.</span>
 
-<!-- KODE VIDEO (Ganti baris 59-63 dengan ini) -->
-<video id="videoKurva" width="640" height="360" controls>
-  <source src="video%20bab%20permintaan/kurva%20penawaran.mp4" type="video/mp4">
+
+<video id="videoPenawaran" width="640" height="360" controls>
+  <source src="video penjelasan/kurva Penawaran.mp4" type="video/mp4">
   Maaf, browser Anda tidak mendukung pemutaran video ini.
 </video>
 
-<!-- LOGIKA JAVASCRIPT (TINGGAL KLIK UNTUK PLAY/PAUSE) -->
 <script>
-  const videoPermintaan = document.getElementById('videoKurva');
+  const vidPenawaran = document.getElementById('videoPenawaran');
   
-  // Logika: Ketika area video diklik, jika sedang pause maka video akan jalan (play).
-  // Jika sedang jalan, maka video akan berhenti (pause).
-  videoPermintaan.addEventListener('click', function() {
-    if (videoPermintaan.paused) {
-      videoPermintaan.play();
+  vidPenawaran.addEventListener('click', function() {
+    if (vidPenawaran.paused) {
+      vidPenawaran.play();
     } else {
-      videoPermintaan.pause();
+      vidPenawaran.pause();
     }
   });
 </script>
